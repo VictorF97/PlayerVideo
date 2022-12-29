@@ -1,0 +1,33 @@
+export const videos = [
+{id: 1, name:  "Gorillaz - Clint eastwood", author: "Gorillaz", views: "3M", img: '/assets/images/gorillaz.png' , genre: "Rock", url: '/assets/videos/gorillaz.mp4'},
+{id: 2, name: "Guns n Roses - Sweet child O' Mine", author: "Guns n Roses", views: "60M", img: '/assets/images/guns-n-roses.png' , genre: "Rock", url: '/assets/videos/guns-n-roses.mp4'},
+{id: 3, name:  "Linkin Park - Numb ", author: "Linkin Park", views: "25M", img: '/assets/images/linkin-park.png' , genre: "Rock", url: '/assets/videos/linkin-park.mp4' },
+{id: 4, name:  "Red Hot Chili Peppers - Scar Tissue", author: "Red Hot Chili Peppers", views: "64M", img: '/assets/images/red-hot-chili-peppers.png' , genre: "Rock", url: '/assets/videos/red-hot-chili-peppers.mp4'},
+{id: 5, name:  "Slipknot - Duality", author: "Slipknot", views: "4M", img: '/assets/images/slipknot.png' , genre: "Rock", url: '/assets/videos/slipknot.mp4'},
+{id: 6, name:  "Bon Jovi - It's My Life", author: "Bon Jovi", views: "31M", img: '/assets/images/bon-jovi.png' , genre: "Rock", url: '/assets/videos/bon-jovi.mp4'},
+{id: 7, name:  "Pitty - Na Sua Estante ", author: "Pitty", views: "20M", img: '/assets/images/pitty.png' , genre: "Rock", url: '/assets/videos/pitty.mp4'},
+
+{id: 8, name:  "Armandinho - Desenho de Deus", author: "Armandinho", views: "1M", img: '/assets/images/armandinho.png' , genre: "Reggea", url: '/assets/videos/armandinho.mp4'},
+{id: 9, name:  "Bob Marley - One Love", author: "Bob Marley", views: "40M", img: '/assets/images/bob-marley.png' , genre: "Reggea", url: '/assets/videos/bob-marley.mp4'},
+{id: 10, name:  "Chimarruts - Quero ser feliz também", author: "Chimarruts", views: "9M", img: '/assets/images/chimarruts.png' , genre: "Reggea", url: '/assets/videos/chimarruts.mp4'},
+{id: 11, name:  "Natirruts - Versos Simples", author: "Natirruts", views: "3,1M", img: '/assets/images/natiruts.png' , genre: "Reggea", url: '/assets/videos/natiruts.mp4'},
+{id: 12, name:  "israel kamakawiwo'ole - Somewhere over the Rainbow", author: "israel kamakawiwo'ole", views: "1,5M", img: '/assets/images/israel-kamakawiwoole.png' , genre: "Reggea", url: '/assets/videos/israel-kamakawiwoole.mp4'},
+{id: 13, name:  "Soja - You And Me", author: "Soja", views: "5M", img: '/assets/images/soja.png' , genre: "Reggea", url: '/assets/videos/soja.mp4'},
+{id: 14, name:  "O Rappa - Anjos", author: "O Rappa", views: "9M", img: '/assets/images/o-rappa.png' , genre: "Reggea", url: '/assets/videos/o-rappa.mp4'},
+
+{id: 15, name:  "Adele - Send my Love", author: "Adele", views: "1,5M", img: '/assets/images/adele.png' , genre: "Pop", url: '/assets/videos/adele.mp4'},
+{id: 16, name:  "Beyoncé - I Was Here ", author: "Beyoncé", views: "25M", img: '/assets/images/beyonce.png' , genre: "Pop", url: '/assets/videos/beyonce.mp4'},
+{id: 17, name:  "Bruno Mars Talking to the Moon", author: "Bruno Mars", views: "11M", img: '/assets/images/bruno-mars.png' , genre: "Pop", url: '/assets/videos/bruno-mars.mp4'},
+{id: 18, name:  "Justin Bieber - Love Yourself", author: "Justin Bieber", views: "3M", img: '/assets/images/justin-bieber.png' , genre: "Pop", url: '/assets/videos/justin-bieber.mp4'},
+{id: 19, name:  "Shakira - Waka Waka", author: "Shakira", views: "19M", img: '/assets/images/shakira.png' , genre: "Pop", url: '/assets/videos/shakira.mp4'},
+{id: 20, name:  "Pink - So What", author: "Pink", views: "6,5M", img: '/assets/images/pink.png' , genre: "Pop", url: '/assets/videos/pink.mp4'},
+{id: 21, name:  "Sia - Chandelier", author: "Sia", views: "2,5M", img: '/assets/images/sia.png' , genre: "Pop", url: '/assets/videos/sia.mp4'},
+
+{id: 22, name: "50 Cent - 21 Questins ", author: "50 Cent", views: "6M", img: '/assets/images/50-cent.png' , genre: "Rap", url: '/assets/videos/50-cent.mp4'},
+{id: 23, name:  "Akon - Lonely", author: "Akon", views: "12M", img: '/assets/images/akon.png' , genre: "Rap", url: '/assets/videos/akon.mp4' },
+{id: 24, name:  "Eminem - Mockingbird", author: "Eminem", views: "40M", img: '/assets/images/eminem.png' , genre: "Rap", url: '/assets/videos/eminem.mp4'},
+{id: 25, name:  "Ja Rule - Mesmorize", author: "Ja Rule", views: "4M", img: '/assets/images/ja-rule.png' , genre: "Rap", url: '/assets/videos/ja-rule.mp4'},
+{id: 26, name:  "Snoop Dogg - Beautiful", author: "Snoop Dogg", views: "36M", img: '/assets/images/snoop-dogg.png' , genre: "Rap", url: '/assets/videos/snoop-dogg.mp4'},
+{id: 27, name:  "Chamillionaire - Ridin' ", author: "Chamillionaire", views: "1M", img: '/assets/images/chamillionaire.png' , genre: "Rap", url: '/assets/videos/chamillionaire.mp4'},
+{id: 28, name:  "Ludacris - Act a Fool", author: "Ludacris", views: "2M", img: '/assets/images/ludacris.png' , genre: "Rap", url: '/assets/videos/ludacris.mp4'},
+]
