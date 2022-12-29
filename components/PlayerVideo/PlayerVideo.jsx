@@ -91,18 +91,18 @@ export const Video = ({isTheaterMode, setIsTheaterMode, chosenVideo, theme}) => 
         <Options>
           <div className="timeline-container"></div>
           <div className="controls">
+            <ButtonLeft> <BsArrowLeftShort/></ButtonLeft>
             <button onClick={togglePlay}>
               {!isVideoPaused ? <BsPause /> : <BsPlay />}
             </button>
-
             <div className='volume-container'>
               <button onClick={toggleMute}>{isMute ? <FiVolume2 /> : <FiVolumeX />}</button>
               <input ref={volumeRef} onInput={(e) => handleRange(e)} className='volume-slider' type='range' min='0' max='1' step='any' defaultValue='1'></input>
             </div>
 
             <div className='duration-container'>
-              <div className='current-time'>{currentTime}</div>/
-              <div className='total-time'>{duration}</div>
+              <b className='current-time'>{currentTime}</b>/
+              <b className='total-time'>{duration}</b>
             </div>
             
             <button onClick={changeSpeed} className='speed-btn wider-btn'>{speed}x</button>

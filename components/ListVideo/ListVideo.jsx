@@ -7,7 +7,7 @@ export const ListVideo = ({name, author, views, img, url, setChosenVideo, theme}
     <Container onClick={()=>setChosenVideo(url)}>
         <Left src={img} className='left'/>
         <Right>
-          <h3 className={`${theme ? 'color' : ''}`}>{name}</h3>
+          <h3 className={`${theme ? 'color' : ''}`}>{name.substr(0, 25)}{name.length > 25 && ' ...'}</h3>
           <div>
             <p className={`${theme ? 'color' : ''}`}>{author}</p>
             <p className={`view ${theme ? 'color' : ''}`}>{views} views</p>

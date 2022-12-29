@@ -106,8 +106,18 @@ video {
   align-items: center;
   gap: .25rem;
   flex-grow: 1;
-}
 
+  b {
+    font-weight: 100;
+  }
+
+  @media only screen and (max-width: 450px) {
+    b{
+      font-size: 10px;
+      font-weight: 100;
+    }
+  }
+}
 .wider-btn {
   width: 50px;
   margin-right: 10px;
@@ -126,24 +136,16 @@ video {
     background-color: #FFFFFF;
   }
   
-  @media (max-width: 1100px) {
-    width: 680px;
-    height: 580px;
+  @media (min-width:700px) and (max-width: 1100px) {
+    width: 400px;
+    height: 410px;
     .video-container {
       width: 680px;
-      height: 520px;
+      height: 370px;
     }
-  }
-  
-  @media (max-width: 768px) {
-    height: 30%;
+    position: absolute;
+    bottom: 16rem;
     
-    .video-container {
-      width: 70vw;    
-      height: 100%;
-      border-top-right-radius: 10px;
-      border-bottom-left-radius: 0;      
-    }    
   }
   
   @media (max-width: 620px) {
@@ -160,7 +162,7 @@ video {
     height: 30%;
     .video-container {
       height: 100%;
-      width: 100vw;    
+      width: 50vw;    
       border-top-right-radius: 10px;
       border-bottom-left-radius: 0;
     }
@@ -171,7 +173,7 @@ export const Options = styled.div`
 
   @media only screen and (max-width: 450px) {
     width: 33%;
-    margin-left: 1rem;
+    
   }
 `
 

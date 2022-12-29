@@ -27,6 +27,7 @@ overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 2rem;
 }
 
 
@@ -72,6 +73,13 @@ button {
   }
 }
 
+@media (min-width: 700px) and (max-width: 900px) {
+  max-height: 70%;
+  overflow-y: scroll;
+  margin-top: 3rem;
+  
+}
+
 @media (max-width: 768px) {
   width: 70vw;
   border-top-right-radius: 0px;
@@ -109,16 +117,28 @@ button {
 @media (max-width: 450px) {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 10px;
-  height: 70%;
+  height: 80%;
   .filter {
-    width: 100%;
+    width: 54%;
     height: 8%;
   }
   
   .sidebar {
     width: 100vw;
-    height: 100%;
-
+    height: 90%;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
   }
 }
+`
+
+export const SidebarStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 440px;
+  height: 600px;
+  margin-inline: auto;    
+  background: #000000e2;
 `

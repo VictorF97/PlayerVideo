@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-width: 340px;
-height: 108px;
+width: 340px !important;
+height: 109px !important;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
 cursor: pointer;
+margin-bottom: 0.3rem;
 
 
 &:hover {
@@ -15,7 +16,7 @@ cursor: pointer;
 
 h3 {
     color: #9C1515;
-    font-size: 16px;
+    font-size: 13px;
     margin: 0;   
 }
 
@@ -32,25 +33,20 @@ p {
     color: #9C1515;
 }
 
-@media (max-width: 1024px) {
-  width: 320px;
-  height: 94px;
-}
-
 @media (max-width: 768px) {
-  width: 100%;
-  height: 18%;
+    width: 50% !important;
+    height: 15% !important;
 }
 
-@media (max-width: 620px) {
+/* @media (max-width: 620px) {
   width: 90%;
   height: 18%;
-}
+} */
 
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
   width: 90%;
   height: 18%;
-}
+} */
 
 `
 
@@ -60,6 +56,10 @@ export const Right = styled.div`
     justify-content: space-evenly;
     width: 145px;
     height: 80px;
+
+    &:hover {
+    background-color: #9F9F9F75;
+}
 
 @media (max-width: 768px) {
     height: 85%;
@@ -81,6 +81,10 @@ export const Left = styled.img`
     width: 140px;
     height: 80px;
     border-radius: 4px;
+
+    &:hover {
+    background-color: #9F9F9F75;
+}
 
   @media (max-width: 1024px) {
     width: 125px
