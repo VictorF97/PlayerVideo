@@ -91,11 +91,9 @@ export const Video = ({isTheaterMode, setIsTheaterMode, chosenVideo, theme}) => 
         <Options>
           <div className="timeline-container"></div>
           <div className="controls">
-            <ButtonLeft> <BsArrowLeftShort/></ButtonLeft>
             <button onClick={togglePlay}>
               {!isVideoPaused ? <BsPause /> : <BsPlay />}
             </button>
-            <ButtonRight> <BsArrowRightShort/></ButtonRight>
 
             <div className='volume-container'>
               <button onClick={toggleMute}>{isMute ? <FiVolume2 /> : <FiVolumeX />}</button>
