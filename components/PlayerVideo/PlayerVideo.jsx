@@ -8,7 +8,7 @@ import { CgScreenWide, CgScreen } from 'react-icons/cg'
 
 export const Video = ({theaterMode, setTheaterMode, pickedVideo, theme}) => {
   const [videoPaude, setVideoPause] = useState(true)
-  const [isFullScreen, setIsFullScreen] = useState(true)
+  const [fullscreen, setFullscreen] = useState(true)
   const [mute, setMute] = useState(true)
   const [duration, setDuration] = useState(null)
   const [currentTime, setCurrentTime] = useState('0:00')
@@ -31,8 +31,8 @@ export const Video = ({theaterMode, setTheaterMode, pickedVideo, theme}) => {
     }
 
   const toggleFullScreen = () => {
-    setIsFullScreen(prev => !prev)    
-    if (!isFullScreen)document.exitFullscreen()
+    setFullscreen(prev => !prev)    
+    if (!fullscreen)document.exitFullscreen()
     else fullScreenRef.current.requestFullscreen()
     }
 
@@ -99,7 +99,7 @@ export const Video = ({theaterMode, setTheaterMode, pickedVideo, theme}) => {
 
             <button onClick={speedVideo} className='speed-btn wider-btn'>{speed}x</button>
             <ModeTeater onClick={toggleTheaterMode}>{theaterMode ? <CgScreenWide/> : <CgScreen />}</ModeTeater>
-            <button onClick={toggleFullScreen}>{ isFullScreen ? <MdFullscreen /> : <MdFullscreenExit/>}</button>
+            <button onClick={toggleFullScreen}>{ fullscreen ? <MdFullscreen /> : <MdFullscreenExit/>}</button>
          
 
            </div>
