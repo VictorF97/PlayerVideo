@@ -1,36 +1,32 @@
 import React, { useEffect, useState } from 'react'
+import { videos } from '../Database/Database'
 import { ListVideo } from '../ListVideo/ListVideo'
 import { Container, SidebarStyle } from './styles';
-import { videos } from '../Database/Database'
-
-export const Sidebar = ({setChosenVideo, theme, setTheme }) => {
-  const [filter, setFilter] = useState('Rock');
-  const [filteredVideos, setFilteredVideos] = useState([]);
 
 
-  //filtra os videos de mesmo genero
+export const Sidebar = ({setPickedVideo, theme, setTheme }) => {
+  const [select, setSelect] = useState('Rock');
+  const [selectVideo, setSelectVideo] = useState([]);
+
   useEffect(()=>{
-    setFilteredVideos([])
+    setSelectVideo([])
       for(let i = 0; i < videos.length; i++){
-        if(videos[i].genre === filter) setFilteredVideos(prev => [...prev, videos[i]])  
+        if(videos[i].genre === select) setSelectVideo(prev => [...prev, videos[i]])  
     }
-  },[filter])
-
-//botoes dos generos 
+  },[select])
   return (
     <Container >
         <SidebarStyle className={`sidebar ${theme ? 'light' : ''}`}>
-          <div className={`filter ${theme ? 'light' : ''}`}> 
-            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setFilter('Rock')}>Rock</button>
-            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setFilter('Reggea')}>Reggea</button>
-            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setFilter('Pop')}>Pop</button>
-            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setFilter('Rap')}>Rap</button>
+          <div className={`select ${theme ? 'light' : ''}`}> 
+            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setSelect('Rock')}>Rock</button>
+            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setSelect('Reggea')}>Reggea</button>
+            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setSelect('Pop')}>Pop</button>
+            <button className={`button ${theme ? 'light' : ''}`} onClick={()=>setSelect('Rap')}>Rap</button>
           </div>
 
-       {filteredVideos.slice(0, 10).map(item=><ListVideo theme={theme} setTheme={setTheme} 
-       setChosenVideo={setChosenVideo} url={item.url} key={item.id} name={item.name} author={item.author} views={item.views} img={item.img} />       
-       )}
- 
+       {selectVideo.map(item=><ListVideo theme={theme} setTheme={setTheme} setPickedVideo={setPickedVideo} 
+       url={item.url} key={item.id} name={item.name} author={item.author} views={item.views} img={item.img} />       
+       )} 
       </SidebarStyle>
     </Container>
   )

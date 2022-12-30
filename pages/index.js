@@ -7,22 +7,20 @@ import { Video } from '../components/PlayerVideo/PlayerVideo'
 import { videos } from '../components/Database/Database'
 
 export default function Home() {
-  const [isTheaterMode, setIsTheaterMode] = useState(false);
-  const [chosenVideo, setChosenVideo] = useState(videos[0].url);
+  const [theaterMode, setTheaterMode] = useState(false);
+  const [pickedVideo, setPickedVideo] = useState(videos[0].url);
   const [theme, setTheme] = useState(false)
 
   return (
     <>
       <Head>
         <title>React VideoPlayer</title>
-        <meta name="description" content="Criaçao de App" />
         <meta name="viewport" content="width=device-width, initial-scale=2" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"></link>
-        <link rel="icon" href="/play.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800" rel="stylesheet"></link>
       </Head>
-      <main className={`${styles.main} ${ theme ? styles.light : ''}`}>
-         <Video isTheaterMode={isTheaterMode} setIsTheaterMode={setIsTheaterMode} chosenVideo={chosenVideo} setChosenVideo={setChosenVideo} theme={theme} setTheme={setTheme} />
-         {!isTheaterMode && <Sidebar setChosenVideo={setChosenVideo}  theme={theme} setTheme={setTheme} /> }
+      <main className={`${styles.main}`}>
+         <Video theaterMode={theaterMode} setTheaterMode={setTheaterMode} pickedVideo={pickedVideo} setPickedVideo={setPickedVideo} theme={theme} setTheme={setTheme} />
+         {!theaterMode && <Sidebar setPickedVideo={setPickedVideo}  theme={theme} setTheme={setTheme} /> }
       </main>
     </>
   )

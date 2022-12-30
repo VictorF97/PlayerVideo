@@ -6,13 +6,9 @@
   height: 100vh;
   font-family: 'Roboto';
   line-height: 17px;
-  background: rgba(0, 0, 0, 0.829);
+  background: black;
   overflow: hidden;
 
-}
-
-.light {
-  background-color: rgb(75, 74, 74);
 }
 
 @media (max-width: 800px) {
@@ -20,7 +16,6 @@
     flex-direction: column;
   }
 }
-
 
 @media (max-width: 450px) {
   .main{
